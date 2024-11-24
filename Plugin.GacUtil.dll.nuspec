@@ -14,7 +14,7 @@
 		<copyright>Danila Korablin</copyright>
 		<tags>SAL,Plugin</tags>
 		<dependencies>
-			<group targetFramework="net20">
+			<group targetFramework="net45">
 				<dependency id="SAL.Flatbed" version="1.2.9" />
 				<dependency id="SAL.Windows" version="1.2.9" />
 			</group>
@@ -23,6 +23,6 @@
 	<files>
 		<file src="README.md" target="docs" />
 		<!--file src="bin\net20\Plugin.GacUtil.xml" target="xml" /-->
-		<file src="bin\net20\Plugin.GacUtil.dll" target="lib\net20" />
+		<file src="bin\net20\Plugin.GacUtil.dll" target="lib\net45" />
 	</files>
 </package>
