@@ -23,6 +23,6 @@
 	<files>
 		<file src="README.md" target="docs" />
 		<!--file src="bin\net20\Plugin.GacUtil.xml" target="xml" /-->
-		<file src="bin\net20\Plugin.GacUtil.dll" target="lib\net45" />
+		<file src="bin\net20\Plugin.GacUtil.exe" target="lib\net45" />
 	</files>
 </package>
