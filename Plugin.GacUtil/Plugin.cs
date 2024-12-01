@@ -9,7 +9,10 @@ namespace Plugin.GacUtil
 		private TraceSource _trace;
 
 		/// <summary>Трассировка сообщений</summary>
-		internal TraceSource Trace => this._trace ?? (this._trace = Plugin.CreateTraceSource<Plugin>());
+		internal TraceSource Trace
+		{
+			get => this._trace ?? (this._trace = Plugin.CreateTraceSource<Plugin>());
+		}
 
 		/// <summary>Установить сборку в GAC</summary>
 		/// <param name="assemblyPath">Физический путь к сборке на диске</param>

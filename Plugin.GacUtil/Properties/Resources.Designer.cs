@@ -61,7 +61,7 @@ namespace Plugin.GacUtil.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copyright (c) AlphaOmega http://DKorablin.ru
+        ///   Looks up a localized string similar to Copyright (c) DKorablin https://DKorablin.ru
         ///User friendly wrapper around Fusion.dll for installing or uninstalling assemblies to the Global Assembly Cache..
         /// </summary>
         internal static string Help {

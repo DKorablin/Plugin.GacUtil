@@ -1,6 +1,6 @@
 ﻿using System;
-using AlphaOmega.Reflection;
 using System.IO;
+using AlphaOmega.Reflection;
 using Plugin.GacUtil.Reflection;
 
 namespace Plugin.GacUtil
@@ -24,7 +24,7 @@ namespace Plugin.GacUtil
 			FUSION_INSTALL_REFERENCE fusionReference = null;
 			IASSEMBLYCACHE_UNINSTALL_DISPOSITION disp = AssemblyCache.UninstallAssembly(assemblyName, fusionReference);
 			if(disp != IASSEMBLYCACHE_UNINSTALL_DISPOSITION.UNINSTALLED)
-				throw new ApplicationException(String.Format("Assembly {0} uninstalled from GAC, but Fusion reports status: {1}", Path.GetFileName(assemblyPath), disp));
+				throw new ApplicationException($"Assembly {Path.GetFileName(assemblyPath)} uninstalled from GAC, but Fusion reports status: {disp}");
 		}
 	}
 }
