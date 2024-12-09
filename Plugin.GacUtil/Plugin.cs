@@ -19,7 +19,7 @@ namespace Plugin.GacUtil
 		public void InstallAssembly(String assemblyPath)
 		{
 			if(String.IsNullOrEmpty(assemblyPath))
-				throw new ArgumentNullException("assemblyPath");
+				throw new ArgumentNullException(nameof(assemblyPath));
 
 			this.Trace.TraceInformation("Installing assembly {0} to GAC...", assemblyPath);
 
@@ -31,7 +31,7 @@ namespace Plugin.GacUtil
 		public void UninstallAssembly(String assemblyPath)
 		{
 			if(String.IsNullOrEmpty(assemblyPath))
-				throw new ArgumentNullException("assemblyPath");
+				throw new ArgumentNullException(nameof(assemblyPath));
 
 			this.Trace.TraceInformation("Uninstalling assembly {0} from GAC...", assemblyPath);
 
